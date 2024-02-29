@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.parallax {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url('/images/moon\ bg-1.jpg') no-repeat center/cover;
+  overflow: hidden;
+}
+
+#text {
+  position: absolute;
+  font-size: 4.5em;
+  /* color: #ff5733; */
+  color: black;
+  text-shadow: 3px 5px 5px #fcfbfb;
+  z-index: 111;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  /* background: linear-gradient(90deg, #c850c0 46%, #ffcc70 100%);
+  background-clip: text;
+  color: transparent; */
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#gate-left {
+  /* position: fixed; */
+  -webkit-transform: translateX(-415px);
+  -ms-transform: translateX(-415px);
+  transform: translateX(-415px);
+}
+#gate-right {
+  /* position: fixed; */
+  -webkit-transform: translateX(450px);
+  -ms-transform: translateX(450px);
+  transform: translateX(450px);
+}
+
+#grass {
+  z-index: 222;
+}
+
+.section-1 {
+  text-align: center;
+  position: relative;
+  background-color: #020912;
+  padding: 30px 100px;
+  min-height: 100vh;
+}
+.section-1 h2 {
+  color: #fff;
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+.section-1 p {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.section-1 img {
+  width: 100%;
+  height: 700px;
+}
